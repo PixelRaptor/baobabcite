@@ -1078,7 +1078,7 @@ ul {
     padding: 0 20px;
     text-align: left;
   }
-  .flex .col p {
+  .flex .col p, .bio-text {
     font-size: 15px;
     max-width: 350px;
     line-height: 24px;
@@ -1201,7 +1201,7 @@ ul {
     text-align: center;
   }
 }
-#testimonals .col p {
+#testimonals .col p, .bio-text {
   font-size: 16px;
 }
 #testimonals .five-stars {
@@ -1920,6 +1920,7 @@ ul.team-grid {
   font-size: 16px;
   font-weight: 500;
   color: orange;
+  margin-bottom: 0.1em;
 }
 li.partner-logo-container {
   border-radius: 4px;
@@ -1964,4 +1965,12 @@ ul.awards-grid {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-gap: 1rem;
+}
+.team-bio{
+  list-style: none;
+  padding-left: 0;
+}
+.team-bio .bio-text{
+  text-align: left !important;
+  margin-bottom: 5px;
 }
