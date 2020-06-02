@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Delivering health education into your hands"
+    />
+    <meta name="keywords" content="Health education" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Baobab Circle</title>
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/vendor/modernizr.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://use.typekit.net/pha3poo.js"></script>
+    <script>
+      try {
+        Typekit.load({ async: !0 });
+      } catch (a) {}
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-big">
+        <a href="/" class="logo"
+          ><img src="images/logo.svg" width="141" height="26" alt="baobab logo"
+        /></a>
+        <div class="navicon">
+          <span></span> <span></span> <span></span> <span></span>
+        </div>
+        <ul class="menu">
+          <a href="index.html"></a>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="https://blog.afyapap.com" target="_blank">Our Blog</a></li>
+          <li class="link_button_container"><a href="http://caregiver.afyapap.com/" target="_blank" class="link_button">Caregiver</a></li>
+          <li class="footer">
+            <ul>
+              <li><a href="privacy.html">Privacy</a></li>
+              <li><a href="terms.html">Terms &amp; conditions</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <section class="bg-blue forms" id="contact">
+      <div class="container">
+        <div class="form" style="padding-bottom: 70px;">
+          <h2>Get in touch</h2>
+          <p>
+            If you have any questions regarding Baobab Circle or Afya Pap please
+            feel free to get in touch.
+          </p>
+          <a href="mailto:info@baobabcircle.com" class="button simple-btn"
+            >Info@baobabcircle.com</a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="bg-darkblue social">
+      <div class="container">
+        <h3>Follow Baobab Circle</h3>
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com/BaobabCircle?lang=en-gb"
+              target="_blank"
+              class="twitter"
+              >twitter</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/afyapap/"
+              target="_blank"
+              class="instagram"
+              >instagram</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/AfyaPap/"
+              target="_blank"
+              class="facebook"
+              >facebook</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/company/10640353?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A10640353%2Cidx%3A2-1-2%2CtarId%3A1475575978002%2Ctas%3Abaobab%20circle"
+              target="_blank"
+              class="linkedin"
+              >linkedin</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCsBy8511r6c2p7FN2fhw9ew"
+              target="_blank"
+              class="youtube"
+              >youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer class="bg-gray">
+      <div class="container">
+        <a href="index.html"
+          ><img
+            src="images/footer_logo.svg"
+            width="149"
+            height="27"
+            alt="baobab logo"
+            class="footer-logo-img"
+        /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="https://blog.afyapap.com">Our Blog</a></li>
+        </ul>
+        <a href="terms.html" class="copy"
+          >All rights reserved. &copy; Baobab 2020</a
+        >
+      </div>
+    </footer>
+    <div id="overlay"></div>
+    <div id="phonePopup">
+      <h2>Let's get started</h2>
+      <p>
+        Please insert your Kenyan mobile number, you will recieve a<br />SMS to
+        your phone which will allow you to begin<br />using Baobab circle.
+      </p>
+      <div class="form">
+        <form
+          action="sendmail.php"
+          method="post"
+          id="contact-sms-form"
+          accept-charset="utf-8"
+        >
+          <input
+            type="text"
+            name="phonePrefix"
+            class="phonePrefix"
+            value="(+254)"
+            disabled="disabled"
+          />
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="712345678"
+            value="712345678"
+            required
+            maxlength="9"
+          />
+        </form>
+      </div>
+      <a href="" class="button phonePopupwhite" id="phoneSignup" title="Sign up"
+        >Sign up - for free</a
+      >
+      <div class="terms">
+        <p>
+          By clicking "Sign up free" I agree to Baobab Circles
+          <a href="http://baobabcircle.com/terms.html">Terms of service</a>.
+        </p>
+      </div>
+      <hr />
+      <h3>Already have an account?</h3>
+      <p>
+        You can still access your account by entering your<br />mobile phone
+        details above and following the<br />prompts.
+      </p>
+    </div>
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
