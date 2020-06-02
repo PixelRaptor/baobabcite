@@ -1140,7 +1140,7 @@ ul {
 }
 @media (min-width: 768px) {
   #testimonals {
-    padding-bottom: 140px;
+    padding-bottom: 50px;
   }
 }
 @media (min-width: 1024px) {
@@ -1158,6 +1158,12 @@ ul {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
+#testimonals .press-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: center;
+}
 }
 #testimonals .flex {
   padding: 40px 25px 30px;
@@ -1179,7 +1185,7 @@ ul {
 @media (min-width: 1024px) {
   #testimonals .flex {
     margin: 0;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 }
 #testimonals .col {
@@ -1208,6 +1214,7 @@ ul {
 #testimonals .testimonals-img img {
   width: 100%;
   margin: 0;
+  border-radius: 4px;
 }
 .forms .arrow-up {
   position: absolute;
@@ -1896,6 +1903,10 @@ ul.team-grid {
   width: 100%;
   margin: 0 auto;
 }
+#testimonals .press-logo {
+  width: 217px;
+  margin: 0 auto;
+}
 
 #testimonals h2.press-heading {
   text-align: left;
@@ -1911,9 +1922,9 @@ ul.team-grid {
   color: orange;
 }
 li.partner-logo-container {
-  border-radius: 3px;
+  border-radius: 4px;
   overflow: hidden;
-  padding: 15px;
+  margin: 15px;
 }
 @media (max-width: 500px) {
   .partner-logo-container > .footer-logo-img {
@@ -1944,13 +1955,13 @@ ul.awards-grid {
   padding: 0;
   margin-top: 2rem;
 }
-.awards-grid li {
+.container p {
+  padding: 0 30px;
+}
+}
+.awards-grid-item {
   width: 100%;
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-gap: 1rem;
-}
-.container p {
-  padding: 0 30px;
-}
 }
