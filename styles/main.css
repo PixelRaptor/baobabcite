@@ -1250,7 +1250,7 @@ ul {
   }
   ul.form.partners {
     /* width: 450px; */
-    max-width: 450px;
+    max-width: 1000px;
   }
 }
 @media (min-width: 1024px) {
@@ -1437,6 +1437,8 @@ footer ul {
   padding: 0;
   -ms-flex-direction: column;
   flex-direction: column;
+
+  display: inherit;
 }
 footer ul li {
   display: inline-block;
@@ -1864,11 +1866,11 @@ footer .copy {
   /* padding: 0 5rem; */
 }
 ul.partner_logos {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 30px;
+  display: flex;
   padding-left: 0;
   list-style: none;
+  padding-top: 10px;
+  justify-content: center;
 }
 
 .awards-grid li{
@@ -1911,6 +1913,7 @@ ul.team-grid {
 li.partner-logo-container {
   border-radius: 3px;
   overflow: hidden;
+  padding: 15px;
 }
 @media (max-width: 500px) {
   .partner-logo-container > .footer-logo-img {
