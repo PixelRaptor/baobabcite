@@ -1168,6 +1168,10 @@ ul {
 #testimonals .flex {
   padding: 40px 25px 30px;
 }
+#testimonals .flex.video{
+  padding: 0px;
+  background: transparent;
+}
 #testimonals .flex h2 {
   color: #f39c3d;
   font-size: 17px;
@@ -1211,10 +1215,20 @@ ul {
   width: 90px;
   margin: 0 auto;
 }
+#testimonals .testimonals-video {
+  width: 100%;
+  margin: 0 auto;
+}
 #testimonals .testimonals-img img {
   width: 100%;
   margin: 0;
   border-radius: 4px;
+}
+#testimonals .testimonals-video iframe {
+  width: 100%;
+  margin: 0;
+  border-radius: 4px;
+  height: 200px;
 }
 .forms .arrow-up {
   position: absolute;
@@ -1974,4 +1988,10 @@ ul.awards-grid {
 .team-bio .bio-text{
   text-align: left !important;
   margin-bottom: 5px;
+}
+#testimonals .flex.video h2 {
+  color: #f39c3d;
+  font-size: 17px;
+  margin-bottom: 3px;
+  margin-top: 10px;
 }
