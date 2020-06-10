@@ -1020,7 +1020,7 @@ ul {
 @media (min-width: 1024px) {
   #companion .col {
     max-width: 500px;
-    margin: 0;
+    /* margin: 0; */
   }
   #companion .col img {
     margin-right: 0;
@@ -1994,4 +1994,70 @@ ul.awards-grid {
   font-size: 17px;
   margin-bottom: 3px;
   margin-top: 10px;
+}
+.dropdownlist {
+  min-width: 100px;
+  display: none;
+  text-align: center;
+  padding: 5px 10px;
+  position: absolute;
+  grid-gap: 5px;
+  grid-template-rows: 25px 1px 25px;
+  box-shadow: 0 0px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #ffffff;
+  border-radius: 2px;
+  margin-top: 1px;
+}
+.nav-dropdown-container:hover > .dropdownlist,.dropdownlist:hover{
+  display: grid;
+}
+.dropdownlist:before {
+  content: '';
+  position: absolute;
+  z-index: -100;
+  display: block;
+  width: .66667rem;
+  height: .66667rem;
+  background: #fff;
+  left: 18px;
+  top: -4px;
+  transform: translateX(-50%) translateZ(0) rotate(45deg);
+  box-shadow: -0.7px -0.7px 0.3px rgba(0, 0, 0, 0.1);
+}
+.dropdownlist:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: .66667rem;
+  height: .66667rem;
+  background: #fff;
+  left: 18px;
+  top: -4px;
+  transform: translateX(-50%) translateZ(0) rotate(45deg)
+}
+.dropdownlist > li{
+  text-align: center;
+  margin: auto;
+}
+hr{
+  background: #e2e2e2;
+  margin: 0;
+}
+
+.condition-flex{
+  height: 500px;
+}
+.col.condition-image {
+  margin: -20px -70px;
+  height: 490px;
+  border-radius: 3px;
+  left: 0px;
+  background: url(../images/primary-health.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#override.condition-wrap{
+  margin-top: -25px;
+  margin-left: 30px;
 }
