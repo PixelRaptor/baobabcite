@@ -2081,8 +2081,8 @@ hr{
   line-height: 24px;
 }
 ul.condition-list {
-  margin-top: -20px;
-  list-style-position: inside;
+  margin-top: -60px;
+  /* list-style-position: inside; */
 }
 @media (min-width: 1024px){
   .condition-flex:first-child {
@@ -2173,4 +2173,8 @@ ul.services-not-offered-container {
   transform: translateX(0%);
   left: 0;
   position: relative;
+}
+.condition-wrap p{
+  opacity: 0;
+
 }
