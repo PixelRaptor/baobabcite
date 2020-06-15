@@ -2204,3 +2204,21 @@ hr {
   margin: 40px 0;
   width: 100%;
 }
+
+@media (max-width: 768px){
+  li.devices-specs.container {
+    display: block;
+}
+.devices-specs > h2 {
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 15px;
+}
+.devices-details {
+  width: 100%;
+}
+  }
+
+  .dropdownlist hr{
+    margin: 0;
+  }
