@@ -1270,7 +1270,7 @@ ul {
   .form {
     margin: 0 auto;
     padding-bottom: 100px;
-    max-width: 420px;
+    max-width: 520px;
   }
   ul.form.partners {
     /* width: 450px; */
@@ -2256,6 +2256,7 @@ form.devices-details input {
 }
 input::placeholder{
   color: #999;
+  text-transform: none;
 }
 
 li.input-line {
