@@ -8,12 +8,38 @@
     />
     <meta name="keywords" content="Health education" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' /> -->
     <title>Baobab Circle</title>
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="stylesheet" href="styles/main.css" />
     <script src="scripts/vendor/modernizr.js"></script>
     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script src="https://use.typekit.net/pha3poo.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      #map {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height:400px;
+      }
+      .marker {
+  background-image: url('mapbox-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  border-radius: 0%;
+  cursor: pointer;
+}
+    </style>
     <script>
       try {
         Typekit.load({ async: !0 });
@@ -92,31 +118,61 @@
               <li class="">Storage Condition: Machine: ~4oC ~ 131oF (-20oC ~ 55oC) Humidity <= 95oRH</li>
               <li class="">Test Paper: 33.8o~86oF(1oC ~ 30oC) Humidity < 85%</li>
             </ul>
+          <hr>
+        </li>
+        <li class="devices-specs container form-container">
+            <h2>Purchase starter pack or strip refills</h2>
+            <form class="devices-details">
+              <p class="">Blood Source: Flesh Capillary Whole Blood</p>
+              <li class="input-line">
+              <label for="phone">Your Name:</label>
+              <input type="tel" id="phone" name="phone" placeholder="263773550554" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}">
+              </li> 
+              <br>
+              <li class="input-line">
+              <label for="phone">Your Phone Number:</label>
+              <input type="tel" id="phone" name="phone" placeholder="263773550554" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}">
+              </li> 
+              <br>
+              <li class="input-line">
+              <label for="phone">Enter a phone number:</label>
+              <input type="tel" id="phone" name="phone" placeholder="263773550554" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}">
+              </li> 
+              <br>
+              <input id="form-button" type="submit">
+            </form>
         </li>
       </ul>
     </section>
-    <section class="launch  bg-gray" id="testimonals">
+
+    <section class="bg-blue forms" id="contact">
       <div class="container">
-        <h2>Where do buy this device</h2>
-        <div class="press-wrapper">
-          <div class="flex" style="background-color: transparent;">
-            <li class="location-grid-item">
-              <div class="flag-icon-container">
-                <img src="images/Kenya.svg" width="149" height="27" alt="baobab logo" class="footer-logo-img"/>
-              </div>
-              <h2 class="location">Kenya</h2>
-              <p>info@baobabcircle.com <br> +264 8644289727</p>
-            </li>
-          </div>
-          <div class="flex" style="background-color: transparent;">
-            <li class="location-grid-item">
-              <div class="flag-icon-container">
-                <img class="zim-flag" src="images/Zimbabwe.svg" width="149" height="27" alt="baobab logo" class="footer-logo-img"/>
-              </div>
-              <h2 class="location">Zimbabwe</h2>
-              <p>fred@baobabcircle.com <br> +264 8644289727</p>
-            </li>
-          </div>
+        <div class="form" style="padding-bottom: 70px;">
+          <h2>Get in touch</h2>
+          <p>
+            If you have any questions regarding Baobab Circle or Afya Pap please
+            feel free to get in touch.
+          </p>
+          <form class="devices-details">
+            <li class="input-line">
+            <label for="phone">Your Name:</label>
+            <input type="tel" id="phone" name="phone" placeholder="263773550554" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}">
+            </li> 
+            <br>
+            <li class="input-line">
+            <label for="phone">Your Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="263773550554" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}">
+            </li> 
+            <br>
+            <li class="input-line">
+            <label for="phone">Enter a phone number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="263773550554" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{2}">
+            </li> 
+            <br>
+            <br>
+            <br>
+          <button class="button simple-btn">Submit</button>
+          </form>
         </div>
       </div>
     </section>
@@ -242,5 +298,6 @@
     </div>
     <script src="scripts/vendor.js"></script>
     <script src="scripts/main.js"></script>
+
   </body>
 </html>

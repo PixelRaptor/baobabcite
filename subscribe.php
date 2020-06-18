@@ -1,5 +1,5 @@
 <?php
-  $to = 'info@baobabcircle.com';
+  $to = 'freeman@baobabcircle.com';
   $subject = "Baobab - stay up to date";
   $message = '<html><body>';
   $message .= "Email: " . $_POST['email'] . "<br/>";
