@@ -2310,3 +2310,45 @@ form.devices-details {
 form .button.simple-btn{
   margin: auto;
 }
+
+
+.input-grid {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+}
+.input-grid select {
+  border-radius: 25px 0px 0px 25px;
+  background: #fff;
+  color: #f39c3d;
+  font-weight: 600;
+  cursor: text;
+  border: 1px solid fff;
+  padding: 0;
+  text-align: left;
+  font-size: 14px;
+  width: 100%;
+  display: inline-block;
+  position: relative;
+  height: 50px;
+  line-height: 20px;
+  padding: 0 25px;
+  margin: 0 0 20px;
+  -webkit-appearance: none;
+}
+.input-grid #userPhone {
+  border-radius: 0px 25px 25px 0px;
+  margin: 0px;
+}
+#country-codes{
+  margin: 0;
+}
+
+@media (max-width: 768px){
+  li.input-line {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.input-line label{
+  display: none;
+}
+}
