@@ -2342,7 +2342,32 @@ form .button.simple-btn{
 #country-codes{
   margin: 0;
 }
+.pricing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 10px;
+}
 
+.pricing-item-div {
+  display: grid;
+  grid-template-rows: 27px 33px;
+  grid-gap: 10px;
+}
+
+h2.price-tag {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 500;
+}
+h2.price-tag span {
+  font-size: 25px;
+  margin-right: 5px;
+}
+p.price-tag-label {
+  /* color: #3b8fb6; */
+  font-weight: 600;
+}
 @media (max-width: 768px){
   li.input-line {
     display: grid;
@@ -2350,5 +2375,22 @@ form .button.simple-btn{
 }
 .input-line label{
   display: none;
+}
+.pricing-item-div {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+p.price-tag-label {
+  margin-bottom: 5px;
+}
+
+.pricing-grid {
+  display: inline-block;
+  grid-gap: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
 }
 }
