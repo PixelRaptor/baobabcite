@@ -2402,7 +2402,7 @@ p.price-tag-label {
   font-size: 16px;
   font-weight: 700;
   line-height: 30px;
-  margin: 0;
+  margin: auto;
   margin-top: 20px;
   padding: 10px 30px;
   text-decoration: none;
@@ -2417,7 +2417,6 @@ p.price-tag-label {
   z-index: 1;
   background: #f39c3d;
   color: #fff;
-  width: 100%;
   box-shadow: 0 0 0 0;
   max-width: 280px;
 }
@@ -2439,4 +2438,7 @@ ul.col.tut {
 
 img.shop_image {
   width: 100%;
+}
+.purchase_button_container {
+  display: grid;
 }
