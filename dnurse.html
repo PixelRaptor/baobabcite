@@ -278,6 +278,7 @@ width: 100%
                 <li class="">A pack of 50 Lancets</li>
                 <li class="">1 lancing device</li>
                 <li class="">1 user manual</li>
+                <button onClick="locateMe()">lOCATE</button>
                 <a class="purchase_button" target="_blank" href="https://www.jumia.co.ke/sinocare-dnurse-sp1-blood-glucose-meter-for-smartphone-30791562.html">Order Device on Jumia</a>
             </ul>
             <hr>
@@ -452,12 +453,14 @@ width: 100%
     <script src="scripts/vendor.js"></script>
     <script src="scripts/main.js"></script>
     <script>
+      function locateMe(){
       $.getJSON('http://api.wipmania.com/jsonp?callback=?', function (data) { 
         console.log(data)
   alert('Latitude: ' + data.latitude + 
         '\nLongitude: ' + data.longitude + 
         '\nCountry: ' + data.address.country); 
 });
+      }
 
 
       function sendMail(){ 
