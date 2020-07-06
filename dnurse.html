@@ -261,6 +261,28 @@ width: 100%
             </ul>
             <hr>
         </li>
+     
+        <li class="devices-specs container">
+            <h2>Buy device in Kenya</h2>
+            <ul class="devices-details">
+              <h2 style="margin-top: 0;color: #848484;">Sinocare Dnurse Starter Pack</h2>
+                <!-- <p class="purchase_device_name">Sinocare Dnurse SP1 Blood Glucose Meter For Smartphone</p> -->
+                  <ul class="col tut">
+                    <li><img class="shop_image" src="images/1.jpg" alt=""></li>
+                    <li><img class="shop_image" src="images/2.jpg" alt=""></li>
+                    <li><img class="shop_image" src="images/6.jpg" alt=""></li>
+                    <li><img class="shop_image" src="images/5.jpg" alt=""></li>
+                  </ul>
+                <li class="">1 Dnurse SP1 blood glucose meter</li>
+                <li class="">A pack of 50 Dnurse SP1 blood glucose test strips</li>
+                <li class="">A pack of 50 Lancets</li>
+                <li class="">1 lancing device</li>
+                <li class="">1 user manual</li>
+                <a class="purchase_button" target="_blank" href="https://www.jumia.co.ke/sinocare-dnurse-sp1-blood-glucose-meter-for-smartphone-30791562.html">Order Device on Jumia</a>
+            </ul>
+            <hr>
+        </li>
+
       </ul>
     </section>
     <section class="map-section">
@@ -430,6 +452,14 @@ width: 100%
     <script src="scripts/vendor.js"></script>
     <script src="scripts/main.js"></script>
     <script>
+      $.getJSON('http://api.wipmania.com/jsonp?callback=?', function (data) { 
+        console.log(data)
+  alert('Latitude: ' + data.latitude + 
+        '\nLongitude: ' + data.longitude + 
+        '\nCountry: ' + data.address.country); 
+});
+
+
       function sendMail(){ 
                
                

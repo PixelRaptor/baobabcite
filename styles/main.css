@@ -2394,3 +2394,49 @@ p.price-tag-label {
   text-align: center;
 }
 }
+
+.purchase_button {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0;
+  margin-top: 20px;
+  padding: 10px 30px;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  outline: 0;
+  vertical-align: middle;
+  overflow: hidden;
+  transition: border-color 0.3s, color 0.3s, background 0.6s;
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  -webkit-appearance: none;
+  z-index: 1;
+  background: #f39c3d;
+  color: #fff;
+  width: 100%;
+  box-shadow: 0 0 0 0;
+  max-width: 280px;
+}
+.purchase_device_name {
+  color: #f39c3d;
+  font-size: 17px;
+  margin-bottom: 3px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+ul.col.tut {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+  grid-gap: 10%;
+  list-style: none;
+  margin-bottom: 18px !important;
+}
+
+img.shop_image {
+  width: 100%;
+}
