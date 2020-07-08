@@ -194,8 +194,8 @@ width: 100%
       } catch (a) {}
     </script>
   </head>
-  <body>
-    <header class="header">
+  <body class="static" style="padding-top:60px;">
+    <header class="header static">
       <div class="container-big">
         <a href="/" class="logo"
           ><img src="images/logo.svg" width="141" height="26" alt="baobab logo"
@@ -237,41 +237,32 @@ width: 100%
     </header>
     <section class="bg-gray" id="companion">
       <div class="container condition-container">
-        <h2>Blood Glucose Meter</h2>
+        <h2>Your Personal Blood Glucometer</h2>
       </div>
       <ul class="devices-specs-list">
         <li class="devices-specs container">
           <hr>
-          <h2>Product Specification </h2>
-            <ul class="devices-details">
-              <img src="images/dnurse_devices.png" alt="">
-            </ul>
-            <hr>
-        </li>
-
-        <li class="devices-specs container">
-          <h2>Starter Pack</h2>
+          <div class="starter_pack_brief">
+            <h2>Blood Glucose Meter Starter Pack</h2>
+            <p>Our glucometer provides intelligent diabetes management solutions that combines the device with our mobile app to provide daily recommendations regarding insulin dosages, diet, exercise, medication and blood glucose levels.</p>
+            <div class="purchase_button_container">
+              <a href="#locate" class="purchase_button" id="rest_of_africa">Find a store near you</a>
+            <a class="purchase_button"  id="only_kenya" target="_blank" href="https://www.jumia.co.ke/sinocare-dnurse-sp1-blood-glucose-meter-for-smartphone-30791562.html">Order from Jumia today</a>
+            </div>
+          </div>
           <ul class="devices-details">
-            <h2 style="margin-top: 0;color: #848484;">Dnurse Starter Pack</h2>
-              <!-- <p class="purchase_device_name">Sinocare Dnurse SP1 Blood Glucose Meter For Smartphone</p> -->
                 <ul class="col tut">
                   <li><img class="shop_image" src="images/1.jpg" alt=""></li>
-                  <li><img class="shop_image" src="images/2.jpg" alt=""></li>
-                  <li><img class="shop_image" src="images/6.jpg" alt=""></li>
-                  <li><img class="shop_image" src="images/5.jpg" alt=""></li>
+                  <li><img class="shop_image" src="images/4.jpg" alt=""></li>
                 </ul>
               <li class="">1 Dnurse SP1 blood glucose meter</li>
               <li class="">A pack of 50 Dnurse SP1 blood glucose test strips</li>
               <li class="">A pack of 50 Lancets</li>
               <li class="">1 lancing device</li>
               <li class="">1 user manual</li>
-              <div class="purchase_button_container">
-                <a href="#contact" class="purchase_button" id="rest_of_africa">Order Starterpack</a>
-              <a class="purchase_button"  id="only_kenya" target="_blank" href="https://www.jumia.co.ke/sinocare-dnurse-sp1-blood-glucose-meter-for-smartphone-30791562.html">Order Starterpack on Jumia</a>
-              </div>
             </ul>
-          <hr>
-      </li>
+            <hr>
+        </li>
 
      
         <li class="devices-specs container">
@@ -289,7 +280,7 @@ width: 100%
      
       </ul>
     </section>
-    <section class="map-section">
+    <section class="map-section" id="locate">
       <div class='sidebar'>
       <div class='heading container'>
         <h2></h2>
@@ -461,7 +452,7 @@ width: 100%
         async function getCountry() {
           const response = await fetch(api_url);
           const data = await response.json();
-        if(data.country !== 'Kenya'){
+        if(data.country !== 'Kenya2'){
           // console.log(data)
           document.getElementById('rest_of_africa').style.display = "none"
           document.getElementById('only_kenya').style.display = "flex"
