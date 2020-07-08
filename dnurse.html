@@ -452,7 +452,7 @@ width: 100%
         async function getCountry() {
           const response = await fetch(api_url);
           const data = await response.json();
-        if(data.country !== 'Kenya2'){
+        if(data.country === 'Kenya'){
           // console.log(data)
           document.getElementById('rest_of_africa').style.display = "none"
           document.getElementById('only_kenya').style.display = "flex"
@@ -489,7 +489,7 @@ width: 100%
      
                        // Print received data from server 
 
-        console.log(this.responseText, "hello1")
+        // console.log(this.responseText, "hello1")
                       //  result.innerHTML = this.responseText; 
      
                    } 
