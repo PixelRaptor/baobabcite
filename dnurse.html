@@ -490,7 +490,7 @@ width: 100%
         async function getCountry() {
           const response = await fetch(api_url);
           const data = await response.json();
-        if(data.country !== 'KenyaQwe'){
+        if(data.country === 'Kenya'){
           // console.log(data)
           document.getElementById('sp_rest_of_africa').style.display = "none"
           document.getElementById('sp_only_kenya').style.display = "flex"
@@ -567,9 +567,9 @@ width: 100%
          var map = new mapboxgl.Map({
            container: 'map',
            style: 'mapbox://styles/mapbox/light-v10',
-       center: [20, 0],
+           center: [20, 0],
            zoom: 2,
-           scrollZoom: false
+           scrollZoom: true
          });
    
          var stores = {
