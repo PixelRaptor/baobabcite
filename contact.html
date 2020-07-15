@@ -20,7 +20,24 @@
       try {
         Typekit.load({ async: !0 });
       } catch (a) {}
-    </script>
+  // Facebook Pixel Code
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+   fbq('init', '1518805888297347'); 
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+   <img height="1" width="1" 
+  src="https://www.facebook.com/tr?id=1518805888297347&ev=PageView
+  &noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
     <style>
 
 .sidebar {
@@ -439,6 +456,7 @@ width: 100%
                  "address": "20 Air St, London, London W1B 5DL, GB",
                  "city": "London, United Kingdom",
                  "country": "United Kingdom",
+                 "office": "Baobab Circle United Kingdom",
                }
              },
              {
@@ -456,6 +474,7 @@ width: 100%
                  "address": "39 Van Praagh Avenue Milton park",
                  "city": "Harare, Zimbabwe",
                  "country": "Zimbabwe",
+                 "office": "Baobab Circle Zimbabwe",
                }
              },
              {
@@ -473,6 +492,7 @@ width: 100%
                  "address": " 11th Floor, George Padmore Road, One Padmore Place",
                  "city": "Nairobi, Kenya",
                  "country": "Kenya",
+                 "office": "Baobab Circle Kenya",
                }
              }
            ]
@@ -641,7 +661,7 @@ new mapboxgl.Marker(el)
            if (popUps[0]) popUps[0].remove();
            var popup = new mapboxgl.Popup({closeOnClick: false})
              .setLngLat(currentFeature.geometry.coordinates)
-             .setHTML('<h3>Guardian Health</h3>' +
+             .setHTML('<h3>' + currentFeature.properties.office + '</h3>' +
                '<h4>' + currentFeature.properties.address + '</h4>')
              .addTo(map);
          }

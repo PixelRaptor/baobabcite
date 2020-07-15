@@ -18,7 +18,24 @@
       try {
         Typekit.load({ async: !0 });
       } catch (a) {}
-    </script>
+  // Facebook Pixel Code
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+   fbq('init', '1518805888297347'); 
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+   <img height="1" width="1" 
+  src="https://www.facebook.com/tr?id=1518805888297347&ev=PageView
+  &noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
   </head>
   <body>
     <header class="header">
@@ -220,9 +237,17 @@
           <div class="flex" style="background-color: transparent;">
             <li class="awards-grid-item">
               <div class="award-icon-container">
+                <img src="images/apps_africa.jpeg" width="149" height="27" alt="baobab logo" class="footer-logo-img"/>
+              </div>
+              <p>Apps Africa - Best HealthTech Solution (2018 Winner)</p>
+            </li>
+          </div>
+          <div class="flex" style="background-color: transparent;">
+            <li class="awards-grid-item">
+              <div class="award-icon-container">
                 <img src="images/amref.svg" width="149" height="27" alt="baobab logo" class="footer-logo-img"/>
               </div>
-              <p>AMREF Health Innovation Challenge (2018 Winner)</p>
+              <p>AMREF Health - Innovation Challenge (2018 Winner)</p>
             </li>
           </div>
           <div class="flex" style="background-color: transparent;">
@@ -230,7 +255,7 @@
               <div class="award-icon-container">
                 <img src="images/1.svg" width="149" height="27" alt="baobab logo" class="footer-logo-img"/>
               </div>
-              <p>Sanofi Diabetes Innovation Challenge (2019 Winner)</p>
+              <p>Sanofi - Diabetes Innovation Challenge (2019 Winner)</p>
             </li>
           </div>
           <div class="flex" style="background-color: transparent;">

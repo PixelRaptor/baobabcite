@@ -192,7 +192,24 @@ width: 100%
       try {
         Typekit.load({ async: !0 });
       } catch (a) {}
-    </script>
+  // Facebook Pixel Code
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+   fbq('init', '1518805888297347'); 
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+   <img height="1" width="1" 
+  src="https://www.facebook.com/tr?id=1518805888297347&ev=PageView
+  &noscript=1"/>
+  </noscript>
+  <!-- End Facebook Pixel Code -->
   </head>
   <body class="static" style="padding-top:60px;">
     <header class="header static">
@@ -246,8 +263,8 @@ width: 100%
             <h2>Blood Glucose Meter Starter Pack</h2>
             <p>Our glucometer provides intelligent diabetes management solutions that combines the device with our mobile app to provide daily recommendations regarding insulin dosages, diet, exercise, medication and blood glucose levels.</p>
             <div class="purchase_button_container">
-              <a href="#locate" class="purchase_button" id="rest_of_africa">Find a store near you</a>
-            <a class="purchase_button"  id="only_kenya" target="_blank" href="https://www.jumia.co.ke/sinocare-dnurse-sp1-blood-glucose-meter-for-smartphone-30791562.html">Order from Jumia today</a>
+              <a href="#locate" class="purchase_button" id="sp_rest_of_africa">Find a store near you</a>
+              <a class="purchase_button"  id="sp_only_kenya" target="_blank" href="https://www.jumia.co.ke/sinocare-dnurse-sp1-blood-glucose-meter-for-smartphone-30791562.html">Order from Jumia today</a>
             </div>
           </div>
           <ul class="devices-details">
@@ -259,6 +276,27 @@ width: 100%
               <li class="">A pack of 50 Dnurse SP1 blood glucose test strips</li>
               <li class="">A pack of 50 Lancets</li>
               <li class="">1 lancing device</li>
+              <li class="">1 user manual</li>
+            </ul>
+            <hr>
+        </li>
+
+
+        <li class="devices-specs container">
+          <div class="starter_pack_brief">
+            <h2>Blood Glucose Testing Strips</h2>
+            <p>Dnurse DS1 Test Strips come in a pack of 50 strips plus 50 lancets. Each strip is separately laminated inside a sachet fitted with desiccant to keep them dry.</p>
+            <div class="purchase_button_container">
+              <a href="#locate" class="purchase_button" id="ts_rest_of_africa">Find a store near you</a>
+              <a class="purchase_button"  id="ts_only_kenya" target="_blank" href="https://www.jumia.co.ke/sinocare-dnurse-test-strips-50-strips-50-lancets-30837337.html">Order from Jumia today</a>
+            </div>
+          </div>
+          <ul class="devices-details">
+                <ul class="col tut">
+                  <li><img class="shop_image" src="images/sp2.jpg" alt=""></li>
+                  <li><img class="shop_image" src="images/sp1.jpg" alt=""></li>
+                </ul>
+              <li class="">50 test strips each laminated in a sachet with desiccants</li>
               <li class="">1 user manual</li>
             </ul>
             <hr>
@@ -454,12 +492,18 @@ width: 100%
           const data = await response.json();
         if(data.country === 'Kenya'){
           // console.log(data)
-          document.getElementById('rest_of_africa').style.display = "none"
-          document.getElementById('only_kenya').style.display = "flex"
+          document.getElementById('sp_rest_of_africa').style.display = "none"
+          document.getElementById('sp_only_kenya').style.display = "flex"
+          // console.log(data)
+          document.getElementById('ts_rest_of_africa').style.display = "none"
+          document.getElementById('ts_only_kenya').style.display = "flex"
         }
         else{
-          document.getElementById('only_kenya').style.display = "none"
-          document.getElementById('rest_of_africa').style.display = "flex"
+          document.getElementById('sp_only_kenya').style.display = "none"
+          document.getElementById('sp_rest_of_africa').style.display = "flex"
+
+          document.getElementById('ts_only_kenya').style.display = "none"
+          document.getElementById('ts_rest_of_africa').style.display = "flex"
         }
         }
 
@@ -546,6 +590,7 @@ width: 100%
                  "address": "39 Van Praagh Avenue Milton park",
                  "city": "Harare, Zimbabwe",
                  "country": "Zimbabwe",
+                 "name": "Baobab Circle United Kingdom",
                }
              },
              {
@@ -563,6 +608,7 @@ width: 100%
                  "address": " 11th Floor, George Padmore Road, One Padmore Place",
                  "city": "Nairobi, Kenya",
                  "country": "Kenya",
+                 "name": "Baobab Circle Kenya",
                }
              },
              {
@@ -580,6 +626,7 @@ width: 100%
                  "address": "Ggaba Road, Kampala, Uganda",
                  "city": "Guardian Health Pharmacy - Bunga Branch",
                  "country": "Uganda",
+                 "name": "Guardian Health Pharmacy",
                }
              },
              {
@@ -597,6 +644,7 @@ width: 100%
                  "address": "Mzee Katos Building, Muyenga Road, Kampala, Uganda",
                  "city": "Guardian Health Pharmacy - Kabalagala",
                  "country": "Uganda",
+                 "name": "Guardian Health Pharmacy",
                }
              },
              {
@@ -614,6 +662,7 @@ width: 100%
                  "address": "Kisementi, 12 Bukoto St, Kampala, Uganda",
                  "city": "Guardian Health Pharmacy - Kampala",
                  "country": "Uganda",
+                 "name": "Guardian Health Pharmacy",
                }
              },
              {
@@ -631,6 +680,7 @@ width: 100%
                  "address": "Bombo Road, Kampala, Uganda",
                  "city": "Guardian Health Pharmacy - Kampala",
                  "country": "Uganda",
+                 "name": "Guardian Health Pharmacy",
                }
              },
              {
@@ -648,6 +698,7 @@ width: 100%
                  "address": "Kampala, Uganda",
                  "city": "Guardian Health Pharmacy - Kampala",
                  "country": "Uganda",
+                 "name": "Guardian Health Pharmacy",
                }
              },
              {
@@ -665,6 +716,7 @@ width: 100%
                  "address": "Ggaba Road, Kampala, Uganda",
                  "city": "Guardian Health Pharmacy - Bunga Branch",
                  "country": "Uganda",
+                 "name": "Guardian Health Pharmacy",
                }
              },
              {
@@ -682,6 +734,7 @@ width: 100%
                  "address": "Bukoto Ntinda Rd, Kampala, Uganda",
                  "city": "Guardian Health Pharmacy - Ntinda",
                  "country": "Uganda",
+                 "name": "Guardian Health Pharmacy",
                }
              }
             //  ,{
@@ -867,7 +920,7 @@ new mapboxgl.Marker(el)
            if (popUps[0]) popUps[0].remove();
            var popup = new mapboxgl.Popup({closeOnClick: false})
              .setLngLat(currentFeature.geometry.coordinates)
-             .setHTML('<h3>Guardian Health</h3>' +
+             .setHTML('<h3>' + currentFeature.properties.name + '</h3>' +
                '<h4>' + currentFeature.properties.address + '</h4>')
              .addTo(map);
          }
