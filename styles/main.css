@@ -2451,3 +2451,45 @@ img.shop_image {
   padding-right: 80px;
   box-sizing: border-box;
 }
+
+  .coming-soon {
+    top: -600px;
+    position: fixed;
+    z-index: 1;
+    padding: 5px 20px 50px;
+    width: 100%;
+    transition: 0.2s ease-in;
+}
+.coming-soon.open{
+  top: 60px;
+}
+button.close-button {
+  background: #0000002e;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: grid;
+  float: right;
+  margin-top: -55px;
+}
+
+.close-button > svg {
+  margin: auto;
+}
+
+@media (min-width: 501px){
+  
+  .empty-space-mobile {
+    display: none;
+  }
+  .coming-soon {
+    padding: 45px 70px 50px;
+}
+}
+@media (max-width: 500px){
+  .empty-space-mobile {
+    height: 15px;
+    display: block;
+  }
+}
